@@ -1,0 +1,13 @@
+#--- Creating Azure File share with Azure CLI ---#
+
+az storage directory create \
+	--account-name <storageAccountName> \
+	--account-key <storageAccountKey> \
+	--share-name <FileShareName> \
+	--name "<DirectoryName>"
+
+
+#--- Creating Azure VM by PowerShell ---#
+
+new-azvm -ResourceGroupName 'rs-name' -Name 'vm-name' -Location 'location' -VirtualNetworkName 'network-name'`
+    -SubnetName 'subnet-name' -SecurityGroupName 'sg-name' -PublicIpAddressName 'publicIP-name' -OpenPorts 'port-number'
